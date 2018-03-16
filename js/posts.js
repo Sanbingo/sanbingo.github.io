@@ -1,1 +1,1 @@
-[{"title":"我的第一个博客","date":"2018.03.16","uri":"2018/03/16/我的第一个博客/","excerpt":""},{"title":"Hello World","date":"2018.03.16","uri":"2018/03/16/hello-world/","excerpt":""}]
+[{"title":"我的第一个博客","date":"2018.03.16","uri":"2018/03/16/我的第一个博客/","excerpt":""},{"title":"Hello World","date":"2018.03.16","uri":"2018/03/16/hello-world/","excerpt":""},{"title":"test","date":"2018.03.16","uri":"2018/03/16/test/","excerpt":""}]
