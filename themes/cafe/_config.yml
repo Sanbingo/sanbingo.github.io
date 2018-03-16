@@ -82,14 +82,14 @@ tagcloud_color: false
 # per_page如果为true表示所有文章都设置支持mathjax，如果为false，则在需要支持mathjax的文章加上mathjax: true
 mathjax:
   enable: true
-  per_page: false
+  per_page: true
   cdn: https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
 
 # 其他参数
 google_analytics:
-favicon: /favicon.png
+favicon: /favicon.ico
 
 
 # comments 评论插件
