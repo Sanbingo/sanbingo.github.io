@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于 | 吾日三省</title>
+  <title>Python 基础语法（2） | 吾日三省</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="React, Vue, mpvue, 小程序">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="http://sanbingo.github.io/about/index.html">
+  <meta name="description" content="6、list &amp;amp; tupe  (1) list: 列表，可变，用[]表示，从0开始索引，越界会报错，-1表示倒数第一个。   list.len(): 计算list的长度  list.append(): 末尾添加数据  list.insert(i): 按索引位置插入  list.pop(i): 按索引位置删除，默认删除最后一个 (2) tupe: 元祖，不可变，用()表示，从0开始索引，-">
+<meta name="keywords" content="list, tupe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 基础语法（2）">
+<meta property="og:url" content="http://sanbingo.github.io/2018/09/09/Python-基础语法（2）/index.html">
 <meta property="og:site_name" content="吾日三省">
-<meta property="og:description" content="React, Vue, mpvue, 小程序">
-<meta property="og:updated_time" content="2018-03-16T10:32:02.875Z">
+<meta property="og:description" content="6、list &amp;amp; tupe  (1) list: 列表，可变，用[]表示，从0开始索引，越界会报错，-1表示倒数第一个。   list.len(): 计算list的长度  list.append(): 末尾添加数据  list.insert(i): 按索引位置插入  list.pop(i): 按索引位置删除，默认删除最后一个 (2) tupe: 元祖，不可变，用()表示，从0开始索引，-">
+<meta property="og:updated_time" content="2018-09-09T03:57:48.952Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="React, Vue, mpvue, 小程序">
+<meta name="twitter:title" content="Python 基础语法（2）">
+<meta name="twitter:description" content="6、list &amp;amp; tupe  (1) list: 列表，可变，用[]表示，从0开始索引，越界会报错，-1表示倒数第一个。   list.len(): 计算list的长度  list.append(): 末尾添加数据  list.insert(i): 按索引位置插入  list.pop(i): 按索引位置删除，默认删除最后一个 (2) tupe: 元祖，不可变，用()表示，从0开始索引，-">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -63,12 +64,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Python-基础语法（2）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/about/index.html" class="article-date">
-  <time datetime="2018-03-16T10:30:08.000Z" itemprop="datePublished">2018-03-16</time>
+    <a href="/2018/09/09/Python-基础语法（2）/" class="article-date">
+  <time datetime="2018-09-09T03:42:52.000Z" itemprop="datePublished">2018-09-09</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -77,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于
+      Python 基础语法（2）
     </h1>
   
 
@@ -87,14 +92,30 @@
       
         <!-- Table of Contents -->
         
-        
+        <p><strong><em> 6、list &amp; tupe </em></strong></p>
+<p>(1) list: 列表，可变，用[]表示，从0开始索引，越界会报错，-1表示倒数第一个。</p>
+<p>  <code>list.len()</code>: 计算list的长度<br>  <code>list.append()</code>: 末尾添加数据<br>  <code>list.insert(i)</code>: 按索引位置插入<br>  <code>list.pop(i)</code>: 按索引位置删除，默认删除最后一个</p>
+<p>(2) tupe: 元祖，不可变，用()表示，从0开始索引，-1表示倒数第一个。</p>
+<p>  <code>不可变</code> =&gt; 表示指向不变，如果元祖内部包含列表，列表地址不变，但是列表内的内容可变<br>  例如：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">t1 = (&apos;x&apos;, 123, [&apos;a&apos;, &apos;b&apos;])</span><br><span class="line">t1[2][0] = &apos;A&apos;</span><br><span class="line">//  t1 output: (&apos;x&apos;, 123, [&apos;A&apos;, &apos;b&apos;])</span><br></pre></td></tr></table></figure></p>
+<p>  定义单个元祖和普通括号的区别，末尾加逗号!</p>
+<p>  <code>单个元祖</code>: (6,)<br>  <code>普通括号</code>: (6)</p>
+<p><strong><em> 7、if条件判断</em></strong></p>
+<p>  （1）不要忘记加冒号<br>  （2）缩进规则</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if condition:</span><br><span class="line">  // do sth()</span><br><span class="line">elfi condition:</span><br><span class="line">  // do else sth()</span><br><span class="line">else:</span><br><span class="line">  // do default sth()</span><br></pre></td></tr></table></figure>
+<p>  <code>int()</code>函数，把字符串数字转换成数字。</p>
+<p><strong><em> 8、循环 </em></strong></p>
+<p>（1）for x in list or tupe:<br>        // do sth()<br>    把元素带入变量x执行代码块。</p>
+<p> (2) while condition:<br>        // do sth<br>    当condition返回False时退出。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sanbingo.github.io/about/index.html" data-id="cjlubvnnx0001pp3fdv8n3qg0" class="article-share-link">Share</a>
+      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（2）/" data-id="cjlubvnny0002pp3f5n0ns16j" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/list-tupe/">list, tupe</a></li></ul>
+
     </footer>
   </div>
   
@@ -141,6 +162,16 @@
   </div>
 
     
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/09/Python-基础语法（1）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python 基础语法（1）</div>
+    </a>
+  
+</nav>
+
   
 </article>
  
