@@ -36,7 +36,7 @@
     <div id="header-inner" class="inner">
       <nav id="sub-nav">
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://sanbingo.github.io"></form>
@@ -63,6 +63,70 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-HTML-基础语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/11/HTML-基础语法/" class="article-date">
+  <time datetime="2018-09-11T13:21:44.000Z" itemprop="datePublished">2018-09-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/html/">html</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/11/HTML-基础语法/">HTML 基础语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <p><strong><em> 1、标签语义化 </em></strong></p>
+<p>什么叫语义化呢？</p>
+<p>语义化就是明白每个标签的用途，在什么情况下使用此标签合理。</p>
+<p>语义化的好处：</p>
+<p>（1）更容易被搜索引擎收录</p>
+<p>（2）更容易让屏幕阅读器读出网页内容</p>
+<p>（3）更好的页面结构便于后期维护开发</p>
+<p><strong><em> 2、常用标签 </em></strong></p>
+<p>注意学习：标签的用途、标签在浏览器中默认的样式</p>
+<p><code>&lt;html&gt;</code>: 网页起始结束标签。<br><code>&lt;head&gt;</code>: 头部标签，文档的头部描述了文档的各种属性和信息，包括文档的标题等。<br>下面这些标签可用在 head 部分：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;...&lt;/title&gt;</span><br><span class="line">    &lt;meta&gt; // 定义元数据</span><br><span class="line">    &lt;link&gt; // 用于外链CSS</span><br><span class="line">    &lt;style&gt;...&lt;/style&gt; // 用于内联CSS</span><br><span class="line">    &lt;script&gt;...&lt;/script&gt; // 脚本标签，用于定义脚本</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure></p>
+<p><code>&lt;body&gt;</code>: 网页上的内容全部包含在这里。<br><code>&lt;section&gt;</code>: 章节标签<br><code>&lt;nav&gt;</code>: 导航标签<br><code>&lt;article&gt;</code>: 定义可以独立于内容其余部分的完整独立内容块。<br><code>&lt;aside&gt;</code>: 定义和页面内容关联度较低的内容——如果被删除，剩下的内容仍然很合理。<br><code>&lt;header&gt;</code>: 头部标签，它经常包含 logo、页面标题和导航性的目录。<br><code>&lt;footer&gt;</code>: 底部标签，它经常包含版权信息、法律信息链接和反馈建议用的地址。<br><code>&lt;main&gt;</code>: 定义文档中主要或重要的内容。<br><code>&lt;div&gt;</code>: 容器标签，把网页划分成多个独立的板块。默认样式：无，有id属性用来设置div名称，使结构逻辑更加清晰。<br><code>&lt;p&gt;</code>: 段落标签，默认样式：段前段后有空白，不需要可以用CSS删除或改变。<br><code>&lt;hx&gt;</code>: 标题标签，从h1~h6，一般网站标题用h1，默认样式：样式都会加粗，字体大小依次递减。<br><code>&lt;em&gt;</code>: 强调标签，默认样式：斜体（不加粗）。<br><code>&lt;strong&gt;</code>: 强调标签，默认样式：粗体。<br><code>&lt;small&gt;</code>: 代表注释 ，如免责声明、版权声明等，对理解文档不重要。<br><code>&lt;span&gt;</code>: 无语义标签，为文本单独设置样式，默认样式：无。<br><code>&lt;q&gt;</code>: 短文本引用标签，默认样式：为文本自动添加上双引号。<br><code>&lt;blockquote&gt;</code>: 长文本引用标签，默认样式：左右两边缩进。<br><code>&lt;br /&gt;</code>: 换行标签，在HTML中输入回车和空格是没有作用的，想换行必须用<br>标签。<br><code>&amp;nbsp;</code>: 空格标签，在HTML中输入回车和空格是没有作用的，想输入空格必须用&nbsp;<br><code>&lt;hr /&gt;</code>: 划线标签，默认样式：粗线条，灰色<br><code>&lt;address&gt;</code>: 地址标签，默认样式：斜体，不加粗<br><code>&lt;code&gt;</code>: 代码标签，主要用于展示单行代码。<br><code>&lt;pre&gt;</code>: 代码标签，如果要插入多行代码一般不适用code标签，通常会保留空格和换行符。<br><code>&lt;ul&gt;&lt;li&gt;</code>: 列表标签，默认样式：列表无序，每项li前自带一个小黑圆点。<br><code>&lt;ol&gt;&lt;li&gt;</code>: 列表标签，默认样式：列表有序，从1开始，也可以自定义开始索引。<br><code>&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;</code>: 列表标签<br><code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;td&gt;</code>: 表格标签，数据全部加载完显示，tr表示表格的一行，th表示表格头部的一个单元格，默认粗体居中，td表示表格的一个单元格。表格默认没有边框。<br><code>&lt;table&gt;&lt;thead&gt;&lt;tbody&gt;&lt;tfooter&gt;</code>: 加上这些表结构，tbody包含行的内容下载完优先显示，不必等待表格结束后在显示。<br><code>&lt;table summary=&quot;表格摘要信息&quot;&gt;</code>: 摘要的内容是不会在浏览器中显示出来的。它的作用是增加表格的可读性(语义化)，使搜索引擎更好的读懂表格内容，还可以使屏幕阅读器更好的帮助特殊用户读取表格内容。<br><code>&lt;table&gt;&lt;caption&gt;</code>: 表格标题，显示在表格正中间上方。<br><code>&lt;a&gt;</code>: 链接标签，实现超链接，默认样式：蓝色，点击过后紫色。title属性的作用，鼠标划过链接时会显示这个文本内容。 target属性可以设置在新窗口打开。<br><code>&lt;a&gt;</code>: 邮件标签，实现自动添加邮箱地址、主题和内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;mailto:yy@imooc.com&quot;?subject=&quot;观了不起的盖茨比有感&quot;&amp;body=&quot;你好，对此评论有些想法&quot;&gt;对此影评有何感想，发送邮件给我&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<p><code>&lt;img /&gt;</code>: 图片标签，<img src="图片地址" alt="下载失败时的替换文本" title="提示文本"><br><code>&lt;iframe&gt;</code>: 代表一个内联的框架 。<br><code>&lt;video&gt;</code>: 视频标签<br><code>&lt;audio&gt;</code>: 音频标签<br><code>&lt;canvas&gt;</code>: 画布标签<br><code>&lt;svg&gt;</code>: SVG标签<br><code>&lt;math&gt;</code>: 定义一段数学公式<br><code>&lt;form&gt;</code>: 表单标签，表单可以把用户输入的数据传到服务器端。 action表示服务器地址，method表示数据传输的方式（get/post）<br>所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在 <form></form> 标签之间（否则用户输入的信息可提交不到服务器上哦！）。<br><code>&lt;input /&gt;</code>: 单行输入标签<br>    name属性：表示控件名称<br>    type属性：有很多种值，主要如下：<br>    type=”text”：表示文本输入框<br>    type=”password”：表示密码输入框，输入默认会用*号代替，以防密码泄露<br>    type=”radio”: 单选框，当设置 checked=”checked” 时，该选项被默认选中，同一组的单选按钮，name 取值一定要一致，这样同一组的单选按钮才可以起到单选的作用。<br>    type=”checkbox”: 复选框，当设置 checked=”checked” 时，该选项被默认选中<br>    type=”submit”: 表单提交按钮，当用户需要提交表单信息到服务器时，需要用到提交按钮。<br>    type=”reset”: 表单重置按钮<br>    type=”button”: 普通按钮<br>    type=”color”: 颜色控件<br>    type=”date”: 日期控件<br>    type=”datetime”: 日期时间控件<br>    type=”email”: email控件<br>    type=”file”: 文件上传控件<br>    type=”url”: Url控件<br>    type=”tel”: 电话控件<br>    type=”number”: 数字控件<br>    type=”hidden”: 不显示在页面上的控件，但它的值会被提交到服务器。</p>
+<p><code>&lt;textarea&gt;</code>: 多行文本输入标签，rows属性表示行数，cols属性表示列数<br><code>&lt;select&gt;&lt;option&gt;</code>: 下拉列表标签（单选），设置selected=”selected”属性，则该选项就被默认选中。select设置multiple属性，单选变多选，按住控制键多选。<br><code>&lt;label&gt;</code>: 标记标签，label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上，<label for="控件id名称">。</label></p>
+<p><strong><em> 3、块级元素与行内元素 </em></strong></p>
+<p>(1)块级元素:<br>块级元素与行内元素有几个关键区别：</p>
+<p>格式<br>默认情况下，块级元素会新起一行。<br>内容模型<br>一般块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;article&gt;/&lt;aside&gt;/&lt;audio&gt;/&lt;blockquote&gt;/&lt;canvas&gt;</span><br><span class="line">/&lt;dd&gt;/&lt;div&gt;/&lt;dl&gt;&lt;dd&gt;/&lt;fieldset&gt;/&lt;form&gt;/&lt;figure&gt;</span><br><span class="line">/&lt;hx&gt;/&lt;header&gt;&lt;footer&gt;&lt;hr&gt;/&lt;ul&gt;&lt;ol&gt;&lt;li&gt;/</span><br><span class="line">&lt;p&gt;/&lt;output&gt;/&lt;code&gt;&lt;table&gt;&lt;video&gt;</span><br></pre></td></tr></table></figure></p>
+<p>(2)行内元素：<br>内容：<br>一般情况下，行内元素只能包含数据和其他行内元素。<br>而块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。</p>
+<p>格式：<br>默认情况下，行内元素不会以新行开始，而块级元素会新起一行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">b, big, i, small, tt</span><br><span class="line">abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var</span><br><span class="line">a, bdo, br, img, map, object, q, script, span, sub, sup</span><br><span class="line">button, input, label, select, textarea</span><br></pre></td></tr></table></figure>
+<p>参考链接：<br>1、<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/HTML5_element_list" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/HTML5_element_list</a><br>2、<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://sanbingo.github.io/2018/09/11/HTML-基础语法/" data-id="cjlxuwwcn00022w3fa154sn7l" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
   
     <article id="post-Python-基础语法（4）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -120,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（4）/" data-id="cjluzbq760005993fuvwr5h47" class="article-share-link">Delen</a>
+      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（4）/" data-id="cjlxuwwd600082w3f55ju6jqg" class="article-share-link">Share</a>
       
       
       
@@ -196,7 +260,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（3）/" data-id="cjluzbq730003993feu26qw0v" class="article-share-link">Delen</a>
+      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（3）/" data-id="cjlxuwwda000c2w3f3c99dqgv" class="article-share-link">Share</a>
       
       
       
@@ -276,7 +340,7 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（2）/" data-id="cjluzcr0x0000l33fgmscvohf" class="article-share-link">Delen</a>
+      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（2）/" data-id="cjlxuwwd8000a2w3fuyglxst9" class="article-share-link">Share</a>
       
       
       
@@ -335,7 +399,7 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（1）/" data-id="cjluzbq700002993fvo4xtiy8" class="article-share-link">Delen</a>
+      <a data-url="http://sanbingo.github.io/2018/09/09/Python-基础语法（1）/" data-id="cjlxuwwcl00012w3f7n3tzgec" class="article-share-link">Share</a>
       
       
       
@@ -378,7 +442,7 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://sanbingo.github.io/2018/08/17/vps和vpn的区别/" data-id="cjluzbq6u0000993fwlwhjrgr" class="article-share-link">Delen</a>
+      <a data-url="http://sanbingo.github.io/2018/08/17/vps和vpn的区别/" data-id="cjlxuwwcg00002w3f41xs9wn0" class="article-share-link">Share</a>
       
       
       
@@ -422,9 +486,9 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title categories">Categorieën</h3>
+    <h3 class="widget-title categories">Categories</h3>
     <div class="widget" id="categories">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">4</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/html/">html</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -441,9 +505,13 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title recent-posts">Recente berichten</h3>
+    <h3 class="widget-title recent-posts">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/09/11/HTML-基础语法/">HTML 基础语法</a>
+          </li>
         
           <li>
             <a href="/2018/09/09/Python-基础语法（4）/">Python 基础语法（4）</a>
@@ -461,10 +529,6 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
             <a href="/2018/09/09/Python-基础语法（1）/">Python 基础语法（1）</a>
           </li>
         
-          <li>
-            <a href="/2018/08/17/vps和vpn的区别/">vps和vpn的区别</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -472,9 +536,9 @@ b、用`get()`函数，如果key不存在返回None，或者自定义的默认�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title archive">Archieven</h3>
+    <h3 class="widget-title archive">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
